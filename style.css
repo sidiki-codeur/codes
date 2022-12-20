@@ -1,0 +1,62 @@
+.c
+{
+    text-align: center;
+}
+
+.b
+{
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    animation: zoom 5s ;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+
+.b1{ background-color: rgb(128, 41, 0); animation-delay: 500ms;}
+.b2{ background-color: rgb(240, 202, 10); animation-delay: 1000ms;}
+.b3{ background-color: rgb(162, 247, 3); animation-delay: 1500ms;}
+.b4{ background-color: rgb(9, 241, 121); animation-delay: 2000ms;}
+.b5{ background-color: rgb(3, 255, 179); animation-delay: 2500ms;}
+.b6{ background-color: rgb(0, 0, 0); animation-delay: 3000ms;}
+.b7{ background-color: rgb(0, 0, 255); animation-delay: 3500ms;}
+
+@keyframes deplacement {
+    0%
+    {
+        top:0px;
+        left: 0px;
+    }
+    25%{
+        top:0px;
+        left: 1350px;
+    }
+    50%
+    {
+        top:300px;
+        left: 1350px;
+    }
+    75%
+    {
+        top:300px;
+        left: 0px;
+    }
+    100%
+    {
+        top:0px;
+        left: 0px;
+    };
+}
+
+@keyframes zoom {
+    0%
+    {
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(5);
+    }
+    100%{
+        transform: scaleX(1);
+    };
+}
